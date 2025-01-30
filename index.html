@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- daisyUi and Tailwind -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.5/daisyui.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -19,6 +19,11 @@
     />
     <!-- website logo -->
     <link rel="icon" href="./assets/logo-header.png" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Pet Haven</title>
 
     <style>
@@ -31,7 +36,56 @@
     </style>
   </head>
   <body>
-    <header></header>
+    <header class="bg-[#FFF9F4] sora">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center p-4">
+          <!-- logo -->
+          <div class="flex items-center gap-5">
+            <img src="./assets/logo-header.png" alt="logo" />
+            <p class="text-4xl hidden lg:flex">
+              Pet<span class="text-[#FFDC26]">H</span>aven
+            </p>
+          </div>
+          <!-- middle -->
+          <div class="hidden lg:flex gap-10 text-xl">
+            <p
+              class="hover:text-[#FFDC26] hover:cursor-pointer hover:scale-110 hover:duration-500"
+            >
+              Find a pet
+            </p>
+            <p
+              class="hover:text-[#FFDC26] hover:cursor-pointer hover:scale-110 hover:duration-500"
+            >
+              Breeds
+            </p>
+            <p
+              class="hover:text-[#FFDC26] hover:cursor-pointer hover:scale-110 hover:duration-500"
+            >
+              Contact us
+            </p>
+          </div>
+          <!-- login-register -->
+          <div class="flex gap-2 lg:gap-5 items-center">
+            <div class="flex gap-2 lg:gap-5 text-xl hover:cursor-pointer">
+              <i class="fa-regular fa-bell"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="flex gap-2 lg:gap-5">
+              <button
+                class="btn lg:text-xl border-[#FFDC26] bg-[#FFF9F4] hover:cursor-pointer hover:scale-110 transition-all"
+              >
+                login
+              </button>
+              <button
+                class="btn lg:text-xl bg-[#FFDC26] hover:scale-110 transition-all"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
